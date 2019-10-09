@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>hlo.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #a9b7c6;}
+.s1 { color: #6a8759;}
+.s2 { color: #cc7832;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+hlo.py</font>
+</center></td></tr></table>
+<pre><span class="s0">command = </span><span class="s1">''</span>
+<span class="s0">started = </span><span class="s2">False</span>
+while True<span class="s0">:</span>
+     command = input(<span class="s1">'&gt;'</span><span class="s0">).lower()</span>
+     <span class="s2">if </span><span class="s0">command == </span><span class="s1">'help'</span><span class="s0">:</span>
+         print(<span class="s1">''' 
+start - To start the car 
+stop  - To stop the car 
+quit  - To exit 
+'''</span><span class="s0">)</span>
+     <span class="s2">elif </span><span class="s0">command == </span><span class="s1">'start'</span><span class="s0">:</span>
+       <span class="s2">if </span><span class="s0">started:</span>
+         print(<span class="s1">'car already started'</span><span class="s0">)</span>
+       <span class="s2">else</span><span class="s0">:</span>
+         started = <span class="s2">True</span>
+         <span class="s0">print(</span><span class="s1">'To start the car'</span><span class="s0">)</span>
+     <span class="s2">elif </span><span class="s0">command == </span><span class="s1">'stop'</span><span class="s0">:</span>
+       <span class="s2">if not </span><span class="s0">started:</span>
+         started = <span class="s2">False</span>
+         <span class="s0">print(</span><span class="s1">'car already stopped'</span><span class="s0">)</span>
+       <span class="s2">else</span><span class="s0">:</span>
+         started = <span class="s2">False</span>
+         <span class="s0">print(</span><span class="s1">'To stop the car'</span><span class="s0">)</span>
+     <span class="s2">elif </span><span class="s0">command == </span><span class="s1">'quit'</span><span class="s0">:</span>
+         <span class="s2">break</span>
+     else<span class="s0">:</span>
+         print(<span class="s1">'i cannot understand'</span><span class="s0">)</span>
+
+
+
+</pre>
+</body>
+</html>
